@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.input-pro{
+    border-color: green !important;
+    height: 50px !important;
+}
+.label-pro{
+    margin-bottom: 15px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.imgHover{
+transition: transform 1s;
+}
+
+.imgHover:hover{
+    transform: scale(1.2);
+}

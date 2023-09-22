@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Product Dashboard</title>
+</head>
+<body>
+    <div class="container mt-2">
+        <form id="formid" action="">
+            <label oninput="this" class="label-pro" for="proName">Product Name :</label>
+            <br>
+            <input class="w-100 border border-2 rounded-2 input-pro" type="text" id="proName">
+            <br> <br>
+            <label class="label-pro" for="proCata">Product Catatogry :</label>
+            <br>
+            <input class="w-100 border border-2 rounded-2 input-pro" type="text" id="proCata">
+            <br><br>
+            <label class="label-pro" for="proprice">Product Price :</label>
+            <br>
+            <input class="w-100 border border-2 rounded-2 input-pro" type="number" id="proprice">
+            <br><br>
+            <label class="label-pro" for="proDis">Product Discount</label>
+            <br>
+            <input class="dis-pro" type="radio" value="dis" name="Discount" id="yes">
+            <label class="label-pro" for="yes">Yes</label>
+            <br>
+            <input type="radio" value="nodis" name="Discount" id="no">
+            <label class="label-pro" for="no">No</label>
+            <br><br>
+            <label id="showLabel" style="display: none;" class="label-pro" for="proDis">Enter Product Discount By % :</label>
+            <input style="display: none;"   class="w-100 border border-2 rounded-2 input-pro " type="number" id="proDis">
+            <br>
+            <label class="label-pro" for="proimg">Product Image :</label>
+            <br>
+            <input class="" type="file" id="proimg">
+            <br><br>
+            <label class="label-pro" for="proDes">Product Description :</label>
+            <br>
+            <textarea class="w-100 border border-2 rounded-2 input-pro" name="" id="proDes" cols="5" rows="5"></textarea>
+            <button class="btn btn-success" id="submit" onclick="submitData()">Add Prodnct</button>
+        </form>
+        <button class="btn btn-success" style="display: none;" id="update" onclick="updateData()"><a class="btn btn-success" href="#showpro">Update Product</a></button>
+    </div> 
+    <br>
+    <br>
+    <div id="search" class="container">
+        <label class="label-pro" for="proSearch">Product Search By Name :</label>
+        <br>
+        <input oninput="searchData(this.value)" class="w-100 border border-2 rounded-2 input-pro" type="text" id="proSearch">
+        <br><br>
+    </div>
+    <div class="container mt-5">
+        <div class="row gap-lg-4 align-items-center justify-content-center" id="showpro">
+        </div> 
+    </div>
+  
+    <script src="js/jquary.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
